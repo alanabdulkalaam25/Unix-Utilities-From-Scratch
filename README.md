@@ -6,13 +6,16 @@ The goal is to strengthen understanding of **C programming, Linux/POSIX APIs, sy
 
 ## Utilities
 
-Currently In Progress:
+Completed: 
 
 - `pwd`
 
-Planned:
+Currently In Progress:
 
 - `echo`
+
+Planned:
+
 - `cat`
 - `mkdir`
 - `rmdir`
