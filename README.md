@@ -9,14 +9,14 @@ The goal is to strengthen understanding of **C programming, Linux/POSIX APIs, sy
 Completed: 
 
 - `pwd`
+- `echo`
 
 Currently In Progress:
 
-- `echo`
+- `cat`
 
 Planned:
 
-- `cat`
 - `mkdir`
 - `rmdir`
 - `touch`

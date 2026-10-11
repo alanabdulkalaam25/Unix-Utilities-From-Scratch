@@ -2,13 +2,17 @@ CC = gcc
 
 CFLAGS = -std=c17 -Wall -Wextra -Wpedantic -Werror -g -O0
 
-TARGET = bin/pwd
-SOURCE = src/pwd/pwd.c
+TARGETS = bin/pwd bin/echo
 
-$(TARGET): $(SOURCE)
-	$(CC) $(CFLAGS) $(SOURCE) -o $(TARGET)
+all: $(TARGETS)
+
+bin/pwd: src/pwd/pwd.c
+	$(CC) $(CFLAGS) $< -o $@
+
+bin/echo: src/echo/echo.c
+	$(CC) $(CFLAGS) $< -o $@
 
 clean:
-	rm -f $(TARGET)
+	rm -f $(TARGETS)
 
-.PHONY: clean
+.PHONY: all clean
